@@ -1,0 +1,14 @@
+kind: ImageStream
+apiVersion: image.openshift.io/v1
+metadata:
+  name: swagger-ui
+spec:
+  tags:
+    - name: latest
+      from:
+        kind: DockerImage
+        name: docker.io/swaggerapi/swagger-ui:latest
+      importPolicy:
+        scheduled: true
+      referencePolicy:
+        type: Local

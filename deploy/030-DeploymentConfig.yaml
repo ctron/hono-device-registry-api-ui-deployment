@@ -34,6 +34,6 @@ spec:
               protocol: TCP
           env:
             - name: URL
-              value: https://raw.githubusercontent.com/eclipse/hono/master/site/documentation/static/latest/api/device-registry-v1.yaml
+              value: https://raw.githubusercontent.com/eclipse/hono/master/site/documentation/content/api/management/device-registry-v1.yaml
           imagePullPolicy: IfNotPresent
       restartPolicy: Always
